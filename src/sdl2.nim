@@ -7,7 +7,7 @@ export strutils.`%`
 # Add for people running sdl 2.0.0
 {. deadCodeElim: on .}
 
-{.push warning[user]: off}
+{.push warning[user]: off.}
 when defined(SDL_Static):
   static: echo "SDL_Static option is deprecated and will soon be removed. Instead please use --dynlibOverride:SDL2."
 
